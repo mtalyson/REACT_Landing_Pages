@@ -5,6 +5,8 @@ export default {
   component: Heading,
   args: {
     children: 'O texto está escuro',
+    colorDark: true,
+    uppercase: false,
   },
   argTypes: {
     children: { type: 'string' },
