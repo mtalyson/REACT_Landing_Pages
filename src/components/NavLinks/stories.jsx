@@ -8,7 +8,11 @@ export default {
     links,
   },
   argTypes: {
-    links: { type: '' },
+    links: {
+      table: {
+        disable: true,
+      },
+    },
   },
 };
 
