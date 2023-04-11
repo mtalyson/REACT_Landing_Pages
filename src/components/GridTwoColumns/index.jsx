@@ -24,8 +24,8 @@ export const GridTwoColumns = ({ title, text, srcImg, background }) => {
 };
 
 GridTwoColumns.propTypes = {
-  title: P.node.isRequired,
-  text: P.node.isRequired,
-  srcImg: P.node.isRequired,
+  title: P.string.isRequired,
+  text: P.string.isRequired,
+  srcImg: P.string.isRequired,
   background: P.bool,
 };
