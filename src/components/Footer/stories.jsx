@@ -4,10 +4,10 @@ export default {
   title: 'Components/Footer',
   component: Footer,
   args: {
-    html: `<p>Feito com ❤ por Talyson Moreira</p>`,
+    footerHtml: `<p>Feito com ❤ por Talyson Moreira</p>`,
   },
   argTypes: {
-    html: { type: 'string' },
+    footerHtml: { type: 'string' },
   },
 };
 
