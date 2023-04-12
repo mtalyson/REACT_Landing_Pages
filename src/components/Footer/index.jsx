@@ -15,5 +15,5 @@ export const Footer = ({ html }) => {
 };
 
 Footer.propTypes = {
-  children: P.string.isRequired,
+  html: P.string.isRequired,
 };
