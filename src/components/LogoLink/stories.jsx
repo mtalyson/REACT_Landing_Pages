@@ -10,7 +10,7 @@ export default {
   },
 };
 
-export const ImageOnly = (args) => {
+export const TemplateImage = (args) => {
   return (
     <div>
       <LogoLink {...args} />
@@ -18,7 +18,7 @@ export const ImageOnly = (args) => {
   );
 };
 
-export const TextOnly = (args) => {
+export const TemplateText = (args) => {
   return (
     <div>
       <LogoLink {...args} />
@@ -26,11 +26,11 @@ export const TextOnly = (args) => {
   );
 };
 
-TextOnly.args = {
+TemplateText.args = {
   srcImg: '',
 };
 
-TextOnly.argTypes = {
+TemplateText.argTypes = {
   srcImg: {
     table: {
       disable: true,

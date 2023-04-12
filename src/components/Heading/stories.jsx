@@ -18,16 +18,16 @@ export default {
   },
 };
 
-export const Light = (args) => <Heading {...args} />;
-export const Dark = (args) => <Heading {...args} />;
+export const TemplateLight = (args) => <Heading {...args} />;
+export const TemplateDark = (args) => <Heading {...args} />;
 
-Light.parameters = {
+TemplateLight.parameters = {
   backgrounds: {
     default: 'light',
   },
 };
 
-Dark.args = {
+TemplateDark.args = {
   children: 'O texto está claro',
   colorDark: false,
 };

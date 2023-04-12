@@ -26,7 +26,7 @@ export const Grid = styled.div`
 `;
 
 export const GridItem = styled.div`
-  ${({ theme }) => css`
+  ${() => css`
     ${HeadingContainer} {
       position: relative;
       left: 7rem;
