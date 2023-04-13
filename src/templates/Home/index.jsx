@@ -3,6 +3,7 @@ import { Base } from '../Base';
 import { mapData } from '../../api/map-data';
 
 import mockBase from '../Base/mock';
+import { Error } from '../Error';
 
 function Home() {
   const [data, setData] = useState([]);
@@ -10,14 +11,18 @@ function Home() {
 
   useEffect(() => {
     const load = async () => {
-      const data = await fetch(
-        'http://localhost:1337/api/pages/?filters[slug]=landing-page&populate=deep',
-      );
-      const json = await data.json();
-      const { attributes } = json.data[0];
-      const pageData = mapData([attributes]);
+      try {
+        const data = await fetch(
+          'http://localhost:1337/api/pages/?filters[slug]=landing-page&populate=deep',
+        );
+        const json = await data.json();
+        const { attributes } = json.data[0];
+        const pageData = mapData([attributes]);
 
-      setData(() => pageData[0]);
+        setData(() => pageData[0]);
+      } catch (error) {
+        setData(undefined);
+      }
     };
 
     if (isMounted.current === true) {
@@ -30,7 +35,7 @@ function Home() {
   }, []);
 
   if (data == undefined) {
-    return <h1>Página não encontrada</h1>;
+    return <Error />;
   }
 
   if (data && !data.slug) {
