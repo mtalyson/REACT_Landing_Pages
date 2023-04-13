@@ -97,7 +97,6 @@ describe('map-sections', () => {
       content: 'abc',
       metadata: {
         background: false,
-        name: 'pricing',
         section_id: 'pricing',
       },
     });
@@ -128,12 +127,8 @@ describe('map-sections', () => {
           description: 'Coisa',
         },
         {
-          title: 'Teste 2',
-          description: 'Coisa 2',
-        },
-        {
-          title: 'Teste 3',
-          description: 'Coisa 3',
+          title: 'Teste 1',
+          description: 'abc',
         },
       ],
       image_grid: [],
@@ -175,8 +170,8 @@ describe('map-sections', () => {
         },
         {
           image: {
-            alternativeText: 'Um livro grande aberto',
-            url: 'https://res.cloudinary.com/dlizakp2a/image/upload/v1613749814/360x360_r_1_c073b11d09.jpg',
+            alternativeText: 'cde',
+            url: 'b.svg',
           },
         },
       ],
