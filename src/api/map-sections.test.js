@@ -1,4 +1,8 @@
-import { mapSectionTwoColumns, mapSections } from './map-sections';
+import {
+  mapSectionContent,
+  mapSectionTwoColumns,
+  mapSections,
+} from './map-sections';
 
 describe('map-sections', () => {
   it('should render predefined section if no data', () => {
@@ -6,7 +10,7 @@ describe('map-sections', () => {
     expect(data).toEqual([]);
   });
 
-  it('should map section two columns', () => {
+  it('should map section two columns without data', () => {
     const data = mapSectionTwoColumns();
     expect(data.background).toBe(false);
     expect(data.component).toBe('');
@@ -16,7 +20,7 @@ describe('map-sections', () => {
     expect(data.title).toBe('');
   });
 
-  it('should map section two columns', () => {
+  it('should map section two columns with data', () => {
     const data = mapSectionTwoColumns({
       __component: 'section.section-two-columns',
       _id: '602fdf2d540c00269e056178',
@@ -62,5 +66,38 @@ describe('map-sections', () => {
     expect(data.srcImg).toBe('a.svg');
     expect(data.text).toBe('abc');
     expect(data.title).toBe('title');
+  });
+
+  it('should map section content without data', () => {
+    const data = mapSectionContent();
+    expect(data.background).toBe(false);
+    expect(data.component).toBe('');
+    expect(data.sectionId).toBe('');
+    expect(data.title).toBe('');
+    expect(data.html).toBe('');
+  });
+
+  it('should map section content with data', () => {
+    const data = mapSectionContent({
+      __component: 'section.section-content',
+      _id: '602fdf2d540c00269e056178',
+      title: 'Pricing',
+      content: 'abc',
+      metadata: {
+        background: false,
+        _id: '602fdf2d540c00269e05617b',
+        name: 'pricing',
+        section_id: 'pricing',
+        __v: 0,
+        id: '602fdf2d540c00269e05617b',
+      },
+      __v: 1,
+      id: '602fdf2d540c00269e056178',
+    });
+    expect(data.background).toBe(false);
+    expect(data.component).toBe('section.section-content');
+    expect(data.sectionId).toBe('pricing');
+    expect(data.title).toBe('Pricing');
+    expect(data.html).toBe('abc');
   });
 });
