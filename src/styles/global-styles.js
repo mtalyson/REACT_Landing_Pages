@@ -35,4 +35,33 @@ export const GlobalStyles = createGlobalStyle`
   a {
     color: ${({ theme }) => theme.colors.secondaryColor};
   }
+
+  table {
+    min-width: 360px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  table td, table th {
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: left;
+    border: 0.1rem solid ${({ theme }) => theme.colors.mediumGray};;
+  }
+
+  tfoot td, table th {
+    background: ${({ theme }) => theme.colors.mediumGray};;
+  } 
+
+  .responsive-table {
+    width: 100%;
+    overflow-y: auto;
+  }
 `;
