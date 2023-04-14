@@ -15,7 +15,8 @@ describe('map-sections', () => {
   });
 
   it('should render sections with correct data', () => {
-    const data = mapSections(pagesMockData[0].sections);
+    const data = mapSections(pagesMockData.data[0].attributes.sections);
+
     expect(data[0].component).toBe('section.section-two-columns');
   });
 
@@ -123,8 +124,12 @@ describe('map-sections', () => {
   it('should map grid text with data', () => {
     const data = mapTextGrid({
       __component: 'section.section-grid',
-      description: 'abc',
       title: 'My Grid',
+      description: 'abc',
+      metadata: {
+        background: true,
+        section_id: 'grid-one',
+      },
       text_grid: [
         {
           title: 'Teste 1',
@@ -136,10 +141,6 @@ describe('map-sections', () => {
         },
       ],
       image_grid: [],
-      metadata: {
-        background: true,
-        section_id: 'grid-one',
-      },
     });
     expect(data.background).toBe(true);
     expect(data.component).toBe('section.section-grid-text');
@@ -162,21 +163,27 @@ describe('map-sections', () => {
   it('should map grid image without data', () => {
     const data = mapImageGrid({
       __component: 'section.section-grid',
-      description: 'abc',
       title: 'Gallery',
+      description: 'abc',
+      metadata: {
+        section_id: 'gallery',
+        background: false,
+      },
       text_grid: [],
       image_grid: [
         {
+          alt_text: 'abc',
           image: {
-            alternativeText: 'abc',
-            url: 'a.svg',
+            data: [
+              {
+                attributes: {
+                  url: 'a.svg',
+                },
+              },
+            ],
           },
         },
       ],
-      metadata: {
-        background: false,
-        section_id: 'gallery',
-      },
     });
     expect(data.background).toBe(false);
     expect(data.component).toBe('section.section-grid-image');

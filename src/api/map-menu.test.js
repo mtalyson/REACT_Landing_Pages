@@ -17,12 +17,12 @@ describe('map-menu', () => {
       menu: [
         {
           open_in_new_tab: false,
-          link_text: 'pricing',
+          text: 'pricing',
           url: '#pricing',
         },
         {
           open_in_new_tab: false,
-          link_text: 'contact',
+          text: 'contact',
           url: '#contact',
         },
       ],
@@ -52,7 +52,7 @@ describe('map-menu', () => {
     const links = mapMenuLinks([
       {
         open_in_new_tab: false,
-        link_text: 'pricing',
+        text: 'pricing',
         url: '#pricing',
       },
       {},

@@ -5,6 +5,7 @@ exports[`<Menu /> should not render links 1`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c7 {
@@ -85,6 +86,7 @@ exports[`<Menu /> should not render links 1`] = `
 }
 
 .c8 > img {
+  height: 100vh;
   max-height: 3rem;
 }
 
@@ -225,6 +227,7 @@ exports[`<Menu /> should render logo and main menu navbar 1`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c7 {
@@ -305,6 +308,7 @@ exports[`<Menu /> should render logo and main menu navbar 1`] = `
 }
 
 .c8 > img {
+  height: 100vh;
   max-height: 3rem;
 }
 
