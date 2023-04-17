@@ -23,6 +23,6 @@ Heading.propTypes = {
   children: P.node.isRequired,
   colorDark: P.bool,
   as: P.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']),
-  size: P.oneOf(['small', 'medium', 'big', 'huge']),
+  size: P.oneOf(['small', 'small', 'medium', 'big', 'shuge', 'huge']),
   uppercase: P.bool,
 };

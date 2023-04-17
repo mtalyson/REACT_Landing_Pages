@@ -16,14 +16,16 @@ export const GridTwoColumns = ({
     <SectionBackground background={background} sectionId={sectionId}>
       <Styled.Container background={background}>
         <Styled.TextContainer>
-          <Heading colorDark={!background} as="h2" uppercase>
+          <Heading colorDark={!background} size="shuge" as="h2" uppercase>
             {title}
           </Heading>
           <TextComponent>{text}</TextComponent>
         </Styled.TextContainer>
-        <Styled.ImageContainer>
-          <Styled.Image src={srcImg} alt={title} />
-        </Styled.ImageContainer>
+        {srcImg && (
+          <Styled.ImageContainer>
+            <Styled.Image src={srcImg} alt={title} />
+          </Styled.ImageContainer>
+        )}
       </Styled.Container>
     </SectionBackground>
   );

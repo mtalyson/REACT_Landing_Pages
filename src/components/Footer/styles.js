@@ -8,6 +8,11 @@ export const Container = styled.footer`
 
     p {
       font-size: ${theme.font.sizes.small};
+      margin: ${({ theme }) => theme.spacings.medium} 0;
+    }
+
+    span {
+      color: ${theme.colors.secondaryColor};
     }
 
     & ${SectionContainer} {

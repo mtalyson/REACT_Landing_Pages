@@ -24,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   p {
-    margin: ${({ theme }) => theme.spacings.medium} 0;
+    margin-bottom: ${({ theme }) => theme.spacings.xmedium};
   }
 
   ul, ol {
