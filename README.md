@@ -8,6 +8,7 @@ Aplicação de uma landing page constrída com React.js.
   <img src="https://user-images.githubusercontent.com/45837182/233225464-cefab7ca-9be4-4a7f-804a-282dc4cfd200.png" width="300">
   <img src="https://user-images.githubusercontent.com/45837182/233225627-ef2628b3-5a14-4e80-bba5-87f407f937c3.png" width="300">
   <img src="https://user-images.githubusercontent.com/45837182/233225802-10c0a5eb-05f4-43cd-9cfc-e84aa2a65980.png" width="300">
+  <img src="https://user-images.githubusercontent.com/45837182/233229132-b5d9c284-a26e-4d2e-9577-dcbc67e37b8c.png" width="300">
 </div>
 
 ## :iphone: Screenshots (Mobile)
