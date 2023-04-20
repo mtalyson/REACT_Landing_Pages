@@ -2,7 +2,7 @@
 
 Aplicação de uma landing page construída com React.js. 
 
-[landing-pages-react.netlify.app/](landing-pages-react.netlify.app/)
+[https://landing-pages-react.netlify.app/](https://landing-pages-react.netlify.app/)
 
 ## :computer: Screenshots (Web)
 
