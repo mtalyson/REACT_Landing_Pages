@@ -28,8 +28,6 @@ function Home() {
         const data = await fetch(config.url + slug + '&populate=deep');
         const json = await data.json();
 
-        console.log(json);
-
         const { attributes } = json.data[0];
         const pageData = mapData([attributes]);
 
