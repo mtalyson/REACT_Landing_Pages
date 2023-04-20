@@ -1,6 +1,8 @@
 # :diamond_shape_with_a_dot_inside: Projeto Landing Page (React)
 
-Aplicação de uma landing page constrída com React.js.
+Aplicação de uma landing page construída com React.js. 
+
+[landing-pages-react.netlify.app/](landing-pages-react.netlify.app/)
 
 ## :computer: Screenshots (Web)
 
@@ -19,9 +21,11 @@ Aplicação de uma landing page constrída com React.js.
   <img src="https://user-images.githubusercontent.com/45837182/233227556-98fff590-439c-4289-8724-113eec0de940.png" width="250">
 </div>
 
-## :question: Instruções para Execução
+## :question: Instruções para desenvolvedores
 
-- Baixar e instalar o Node.js em: [https://nodejs.org/en](https://nodejs.org/en).
-- Para instalar dependencias: Digitar `npm install` no terminal.
-- Para executar projeto: Digitar `npm start` no terminal.
-- Abra o seu navegador e entre em [http://localhost:3000](http://localhost:3000) para abrir o ambiente de desenvolvimento.
+1. Instalar o `Node.js` disponível em: [https://nodejs.org/en](https://nodejs.org/en);
+2. Instalar dependencias do projeto: `npm install`;
+3. Executar projeto: `npm start`;
+4. Abrir o seu navegador de internet e entrar em [http://localhost:3000](http://localhost:3000);
+5. Seguir as instruções em: [https://github.com/mtalyson/API_Landing_Pages](https://github.com/mtalyson/API_Landing_Pages) para executar API;
+6. Renomear `.env.example`para `.env` e mudar variáveis para os valores correspondentes;
